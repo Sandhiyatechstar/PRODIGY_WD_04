@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sandhiya's Portfolio - Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f8fafc; /* Light Slate 50 */
+            color: #1e293b; /* Slate 900 */
+        }
+        .section-heading {
+            position: relative;
+            display: inline-block;
+            margin-bottom: 2rem;
+            font-size: 2.5rem; /* text-4xl */
+            font-weight: 700; /* font-bold */
+            color: #1e293b; /* Slate 900 */
+        }
+        .section-heading::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: -8px;
+            width: 60%;
+            height: 4px;
+            background-color: #6366f1; /* Indigo 500 */
+            border-radius: 9999px; /* rounded-full */
+        }
+        .nav-link:hover {
+            color: #6366f1; /* Indigo 500 */
+            transform: translateY(-2px);
+        }
+        .card {
+            background-color: #ffffff;
+            border-radius: 1rem; /* rounded-xl */
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06); /* shadow-md */
+            transition: transform 0.3s ease-in-out;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05); /* shadow-lg */
+        }
+        .btn-primary {
+            background-color: #6366f1; /* Indigo 500 */
+            color: #ffffff;
+            padding: 0.75rem 1.5rem; /* py-3 px-6 */
+            border-radius: 0.75rem; /* rounded-xl */
+            font-weight: 600; /* font-semibold */
+            transition: background-color 0.3s ease-in-out, transform 0.2s ease-in-out;
+        }
+        .btn-primary:hover {
+            background-color: #4f46e5; /* Indigo 600 */
+            transform: translateY(-2px);
+        }
+        .skill-badge {
+            background-color: #e0e7ff; /* Indigo 100 */
+            color: #4338ca; /* Indigo 700 */
+            padding: 0.5rem 1rem; /* py-2 px-4 */
+            border-radius: 9999px; /* rounded-full */
+            font-weight: 600; /* font-semibold */
+            font-size: 0.875rem; /* text-sm */
+            display: inline-block;
+            margin: 0.25rem;
+        }
+    </style>
+</head>
+<body class="antialiased">
+    <header class="bg-white shadow-sm py-4 sticky top-0 z-50">
+        <nav class="container mx-auto flex justify-between items-center px-4 sm:px-6 lg:px-8">
+            <a href="index.html" class="text-2xl font-bold text-indigo-600">Sandhiya</a>
+            <div class="space-x-4">
+                <a href=""C:/Users/sandhiya/OneDrive/Html%20Project/Sandhiya's%20Portfolio.html"" class="nav-link text-gray-700 hover:text-indigo-500 transition duration-300">Home</a>
+                <a href="C:/Users/sandhiya/OneDrive/Html%20Project/Sandhiya's%20About.html" class="nav-link text-gray-700 hover:text-indigo-500 transition duration-300">About Me</a>
+                <a href="C:/Users/sandhiya/OneDrive/Html%20Project/Sandhiya's%20Skils.html" class="nav-link text-gray-700 hover:text-indigo-500 transition duration-300">Skills</a>
+                <a href="C:/Users/sandhiya/OneDrive/Html%20Project/Sandhiya's%20Projects.html" class="nav-link text-gray-700 hover:text-indigo-500 transition duration-300">Projects</a>
+                <a href="C:/Users/sandhiya/OneDrive/Html%20Project/Sandhiya's%20Contact.html" class="nav-link text-gray-700 hover:text-indigo-500 transition duration-300">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="relative bg-gradient-to-br from-indigo-500 to-purple-600 text-white py-20 md:py-32 flex items-center justify-center min-h-screen">
+            <div class="container mx-auto text-center px-4 sm:px-6 lg:px-8">
+                <div class="max-w-4xl mx-auto">
+                    <h1 class="text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight mb-4 animate-fade-in-up">
+                        Hi, I'm <span class="text-yellow-300">Sandhiya</span>.
+                    </h1>
+                    <p class="text-xl sm:text-2xl font-light mb-8 opacity-90 animate-fade-in-up delay-200">
+                        A passionate Web Developer crafting engaging and user-friendly digital experiences.
+                    </p>
+                    <div class="flex flex-wrap justify-center gap-4 animate-fade-in-up delay-400">
+                        <a href="C:/Users/sandhiya/OneDrive/Html%20Project/Sandhiya's%20Projects.html" class="btn-primary">View My Work</a>
+                        <a href="C:/Users/sandhiya/OneDrive/Html%20Project/Sandhiya's%20Contact.html" class="btn-primary bg-transparent border-2 border-white hover:bg-white hover:text-indigo-600">Get In Touch</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-gray-800 text-white py-8 text-center">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <p>&copy; 2025 Sandhiya. All rights reserved.</p>
+            <p class="text-sm mt-2">Designed with Sandhiya</p>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links within the same page
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
